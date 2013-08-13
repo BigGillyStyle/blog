@@ -52,3 +52,15 @@ group :development do
   gem 'better_errors', '~> 0.9.0'
   gem 'binding_of_caller', '~> 0.7.2'
 end
+
+group :test, :development do
+  gem "rspec-rails", "~> 2.0"
+  gem "mongoid-rspec", "~> 1.8.2"
+end
+
+group :test do
+  gem "capybara", "~> 2.1.0"
+end
+
+# Heroku
+gem 'rails_12factor', group: :production
