@@ -44,6 +44,7 @@ end
 
 # Additional gems beyond the Rails 4 standard stack
 gem 'bootstrap-sass', '~> 2.3.2.0'
+gem 'bootswatch-rails', '~> 0.5.0'
 gem 'figaro', '~> 0.7.0'
 gem 'high_voltage', '~> 1.2.3'
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
