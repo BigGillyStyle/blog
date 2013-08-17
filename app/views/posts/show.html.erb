@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= @post.title %></h1>
-<p>Created on <%= @post.created_at %></p>
+<h2><%= @post.title %></h2>
+<p><%= Time.zone.utc_to_local(@post.created_at).to_formatted_s(:long) %></p>
 <p><%= @post.body %></p>
 
 <%= link_to 'Back', posts_path %>

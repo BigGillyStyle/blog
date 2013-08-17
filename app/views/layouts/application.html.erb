@@ -21,11 +21,28 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="span10">
+    <div class="span9">
       <%= yield %>
     </div>
-    <div class="span2">
-      About me
+    <div class="span3">
+      <section>
+        <%= image_tag "andy.jpg", size: "150x150" %>
+        <h4>Andy Pickler</h4>
+        <article>
+          <p>Ruby on Rails, Groovy/Grails, Java, Solr Developer</p>
+          <p><a href="http://www.linkedin.com/in/andypickler">LinkedIn</a></p>
+        </article>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="#">My Rails 4 and MongoDB powered blog.  View the</a>
+      <ul class="nav">
+        <li class="active"><a href="https://github.com/BigGillyStyle/blog">source on Github</a>.</li>
+      </ul>
     </div>
   </div>
 </div>

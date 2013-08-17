@@ -1,4 +1,5 @@
 <% @posts.each do |post| %>
-  <h1><%= link_to post.title, post %></h1>
-  <p>Created on <%=  post.created_at %></p>
+  <h2><%= link_to post.title, post %></h2>
+  <p><%= Time.zone.utc_to_local(post.created_at).to_formatted_s(:long) %></p>
+  <p><%= post.body.truncate(50, separator: ' ', omission: '... (continued)') %></p>
 <% end %>
