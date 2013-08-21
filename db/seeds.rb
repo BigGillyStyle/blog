@@ -8,31 +8,8 @@
 Post.create!(
   [
     {
-      title: "My first post",
-      body: "This is my first ever post to my blog.",
-      comments: [
-        Comment.new(
-          author_name: "Andy Pickler",
-          author_email: "andy.pickler@example.com",
-          body: "This is the best blog ever!"
-        )
-      ]
-    },
-    {
-      title: "My second post",
-      body: "This is my second ever post to my blog.",
-      comments: [
-        Comment.new(
-          author_name: "Andy Pickler",
-          author_email: "andy.pickler@example.com",
-          body: "This is the best blog ever!"
-        ),
-        Comment.new(
-          author_name: "Joe Shmoe",
-          author_email: "joe.shmoe@example.com",
-          body: "This is the worst blog ever!"
-        )
-      ]
+      title: "Welcome to my blog",
+      body: "Whew...this is the first in what I hope to be several posts on my new blog.  I've written (so far) a very basic Rails 4 app with a MongoDB 2.4 database, using the Mongoid gem to connect the app to the database.  After many months of studying both Rails and MongoDB, it was just time to start actually writing my own code.  It's definitely harder to start with an empty slate than to be guided along by tutorials.  But I can tell already the learning curve is accelerating by having to finally figure things out 'on my own' (that's in quotes because I'm constantly Googling and visiting StackOverflow, of course).  Let's see if I can actually get this first posted to the blog now."
     }
   ]
 )

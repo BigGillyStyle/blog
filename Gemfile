@@ -49,6 +49,10 @@ gem 'figaro', '~> 0.7.0'
 gem 'high_voltage', '~> 1.2.3'
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 
+group :production do
+  gem 'thin'
+end
+
 group :development do
   gem 'better_errors', '~> 0.9.0'
   gem 'binding_of_caller', '~> 0.7.2'
